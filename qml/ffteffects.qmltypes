@@ -1,0 +1,13 @@
+import QtQuick.tooling 1.2
+
+Module
+{
+    Component
+    {
+        name: "Convolver"
+        prototype: "StreamNode"
+        exports: ["WPN114.Audio.FFTEffects/Convolver 1.0"]
+
+        Property { name: "irPath"; type: "string" }
+    }
+}
