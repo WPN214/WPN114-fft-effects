@@ -36,8 +36,3 @@ SOURCES += $$PWD/external/fftconvolver/Utilities.cpp
 
 SOURCES += $$PWD/qml_plugin.cpp
 HEADERS += $$PWD/qml_plugin.hpp
-
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
