@@ -8,7 +8,7 @@ set(CMAKE_CXX_LINK_FLAGS)
 
 find_package(Qt5 REQUIRED COMPONENTS Quick Core Qml)
 
-set(WPN114DEVICES_QML_SOURCES
+set(WPN114FFTEFFECTS_QML_SOURCES
     qml_plugin.cpp
     source/convolver/convolver.hpp
     external/fftconvolver/AudioFFT.cpp
@@ -24,9 +24,9 @@ if (UNIX AND NOT APPLE)
 endif()
 
 
-add_library(${PROJECT_NAME} SHARED ${WPN114DEVICES_QML_SOURCES})
+add_library(${PROJECT_NAME} SHARED ${WPN114FFTEFFECTS_QML_SOURCES})
 target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Quick Qt5::Qml -L${WPN114AUDIO_ROOT} -lwpn114audio-qml -lsndfile)
 target_include_directories(${PROJECT_NAME} PUBLIC ${WPN114AUDIO_INCLUDE})
 
-install(TARGETS ${PROJECT_NAME} DESTINATION ${WPN114AUDIO_ROOT}/Devices)
-install(FILES qml/ffteffects.qmltypes qml/qmldir DESTINATION ${WPN114AUDIO_ROOT}/Devices)
+install(TARGETS ${PROJECT_NAME} DESTINATION ${WPN114AUDIO_ROOT}/FFTEffects)
+install(FILES qml/ffteffects.qmltypes qml/qmldir DESTINATION ${WPN114AUDIO_ROOT}/FFTEffects)
