@@ -10,7 +10,7 @@ find_package(Qt5 REQUIRED COMPONENTS Quick Core Qml)
 
 set(WPN114DEVICES_QML_SOURCES
     qml_plugin.cpp
-    source/convolver/convolver.cpp
+    source/convolver/convolver.hpp
     external/fftconvolver/AudioFFT.cpp
     external/fftconvolver/FFTConvolver.cpp
     external/fftconvolver/TwoStageFFTConvolver.cpp
