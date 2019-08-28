@@ -1,5 +1,5 @@
-module WPN114.Audio.FFTEffects
-typeinfo ffteffects.qmltypes
-plugin wpn114ffteffects-qml
+module WPN114.Audio.Fft
+typeinfo fft.qmltypes
+plugin wpn114fft
 classname qml_plugin
 depends WPN114.Audio 1.1
