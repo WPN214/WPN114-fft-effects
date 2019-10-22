@@ -1,3 +1,6 @@
 [submodule "external/fftconvolver"]
 	path = external/fftconvolver
 	url = https://github.com/HiFi-LoFi/FFTConvolver.git
+[submodule "cmake-modules"]
+	path = cmake-modules
+	url = https://github.com/WPN214/cmake-modules.git

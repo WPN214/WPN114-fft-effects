@@ -17,7 +17,7 @@ class Convolver : public Node
     WPN_DECLARE_DEFAULT_AUDIO_INPUT     (audio_in, 2)
     WPN_DECLARE_DEFAULT_AUDIO_OUTPUT    (audio_out, 2)
 
-    Q_PROPERTY (QString irPath READ ir_path WRITE set_ir_path )
+    Q_PROPERTY (QString ir READ ir_path WRITE set_ir_path )
 
 public:
     //-------------------------------------------------------------------------------------------------
